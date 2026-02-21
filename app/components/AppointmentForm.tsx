@@ -367,7 +367,7 @@ export function AppointmentForm({ onSuccess }: BookingFormProps) {
       {/* COLUMN 1: SCHEDULING */}
       <div className="lg:col-span-4 space-y-6">
         <Card className="overflow-hidden border-zinc-200 shadow-xl rounded-3xl">
-          <div className="bg-yellow-400 p-4 text-white flex items-center gap-2">
+          <div className="bg-indigo-900 p-4 text-white flex items-center gap-2">
             <CalendarIcon className="h-5 w-5" />
             <span className="font-bold">1. Select Date</span> <Required />
           </div>
@@ -383,9 +383,9 @@ export function AppointmentForm({ onSuccess }: BookingFormProps) {
         </Card>
 
         <Card className="overflow-hidden border-zinc-200 shadow-xl rounded-3xl min-h-75">
-          <div className="bg-yellow-400/60 p-4 text-white flex items-center gap-2">
-            <Clock className="h-5 w-5 text-black" />
-            <span className="font-bold text-black">2. Choose Time</span>{" "}
+          <div className="bg-indigo-900/90 p-4 text-white flex items-center gap-2">
+            <Clock className="h-5 w-5 text-white" />
+            <span className="font-bold text-white">2. Choose Time</span>{" "}
             <Required />
           </div>
           <div className="p-6">
@@ -409,14 +409,14 @@ export function AppointmentForm({ onSuccess }: BookingFormProps) {
                         selectedTime === t
                           ? "bg-emerald-600 text-white border-emerald-600"
                           : isOccupied
-                            ? "bg-amber-50 border-amber-200 text-amber-700 hover:border-amber-400" // Visual warning it's taken
+                            ? "bg-amber-50 border-amber-200 text-amber-700 hover:border-indigo-400" // Visual warning it's taken
                             : "bg-white border-zinc-200 hover:border-emerald-500",
                       )}
                     >
                       {t}
                       {/* Optional: Small indicator dot if occupied */}
                       {isOccupied && selectedTime !== t && (
-                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />
                       )}
                     </button>
                   );
@@ -895,7 +895,7 @@ export function AppointmentForm({ onSuccess }: BookingFormProps) {
               !agreedToTerms ||
               (patientMode === "returning" && !foundPatientId)
             }
-            className="w-full py-8 text-xl font-black bg-yellow-400 hover:bg-emerald-600 text-white rounded-[2rem] shadow-2xl transition-all"
+            className="w-full py-8 text-xl font-black bg-indigo-900 hover:bg-emerald-600 text-white rounded-[2rem] shadow-2xl transition-all"
           >
             {isSubmitting ? (
               <Loader2 className="animate-spin" />
