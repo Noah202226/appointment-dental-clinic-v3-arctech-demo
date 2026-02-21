@@ -11,7 +11,7 @@ function Header() {
         </div>
         <div>
           <h1 className="text-2xl font-black text-zinc-800 tracking-tight">
-            Manila Dental Arts
+            Arc Tech Dental Clinic Demo
           </h1>
           <p className="text-[10px] text-yellow-400 font-bold uppercase tracking-widest">
             v3 appointment booking
@@ -21,7 +21,7 @@ function Header() {
       <div className="hidden md:block text-right">
         <p className="text-xs font-bold text-zinc-400 uppercase">Need help?</p>
         <p className="text-sm font-black text-yellow-400">
-          📞 (Contact): +639055169516 or maniladentalarts@gmail.com
+          📞 (Contact): +639055169516 or yourEmail@gmail.com
         </p>
       </div>
     </header>

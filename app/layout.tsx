@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Appointment - Manila Dental Arts",
+  title: "Appointment - Arc tech Dental Clinic v3 - Demo",
   description: "Build by ArcTech Solutions",
 };
 
